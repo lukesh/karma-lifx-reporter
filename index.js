@@ -7,6 +7,10 @@ var LifxReporter = function(baseReporterDecorator) {
 
 	baseReporterDecorator(this);
 
+  setInterval(function() {
+    lx.lightsOn();
+  }, 10000);
+
 	this.onSpecComplete = function() { };
 
   this.onRunComplete = function(browsers, results) {
