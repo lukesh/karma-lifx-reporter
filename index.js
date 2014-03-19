@@ -3,13 +3,13 @@ lifx = require('lifx')
 var LifxReporter = function(baseReporterDecorator) {
   var lx
   lifx.setDebug = false;
+  lx = lifx.init();
 
 	baseReporterDecorator(this);
 
 	this.onSpecComplete = function() { };
 
   this.onRunComplete = function(browsers, results) {
-    lx = lifx.init();
     lx.lightsOn();
 
 		if (results.failed || results.error) {

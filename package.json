@@ -1,6 +1,6 @@
 {
   "name": "karma-lifx-reporter",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "A Karma plugin. Changes the color of a Lifx bulb (red/green) based on Karma results.",
   "main": "index.js",
   "scripts": {
